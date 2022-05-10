@@ -17,5 +17,14 @@ docker compose -f .\docker-compose-build.yml build
 ```
 docker compose up -d
 ```
+5. การใช้งาน Frontend
+```
+http://localhost:8013
+```
+6. การใช้งาน Backend
+```
+http://localhost:3013
+```
+
 
 ดูข้อมูลอื่นๆได้ใน [wiki](https://github.com/konlawatit/devtools-final/wiki)
