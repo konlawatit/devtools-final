@@ -26,5 +26,5 @@ http://localhost:8013
 http://localhost:3013
 ```
 
-
-ดูข้อมูล Planning & Design ได้ใน [wiki](https://github.com/konlawatit/devtools-final/wiki)
+# Wiki
+* ดูข้อมูล Planning & Design ได้ใน [wiki](https://github.com/konlawatit/devtools-final/wiki)
