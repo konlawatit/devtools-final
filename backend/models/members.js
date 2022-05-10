@@ -5,15 +5,18 @@ const Schema = mongoose.Schema;
 const memberSchema = new Schema({
     firstName: {
         type: String,
-        required: true
+        // required: true
     },
     lastName: {
         type: String,
-        required: true
+        // required: true
     },
-    age: {
+    phone: {
         type: String,
         // required: true
+    },
+    date: {
+        type: String
     }
 })
 

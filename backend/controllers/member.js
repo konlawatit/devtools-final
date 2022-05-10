@@ -15,11 +15,11 @@ router.get('/healt', async (req, res) => {
 
 router.post('/add', async(req, res) => {
     try {
-        const {firstName, lastName, age} = req.body;
+        const {firstName, lastName, phone} = req.body;
         const member = await Member.create({
             firstName: firstName,
             lastName: lastName,
-            age: age
+            phone: phone
         })
         res.send(member)
     } catch (err) {
@@ -40,8 +40,8 @@ router.get('/all', async (req, res) => {
 
 router.put('/edit', async (req, res) => {
     try {
-        const {id, firstName, lastName, age} = req.body;
-        Member.findByIdAndUpdate(id, {"firstName": firstName, "lastName": lastName, "age": age}, (err, result) => {
+        const {id,  date} = req.body;
+        Member.findByIdAndUpdate(id, {"date": date}, (err, result) => {
             if (err) throw err
             res.send(result)
         })
@@ -60,6 +60,17 @@ router.delete('/del', async (req, res) => {
             if (err) throw err
             res.send(result)
         })
+    } catch(err) {
+        console.log(err)
+        res.send(err)
+    }
+})
+
+router.post('/find/byid', async(req, res) => {
+    try {
+        const {id} = req.body
+        const members = await Member.findById(id)
+        res.send(members)
     } catch(err) {
         console.log(err)
         res.send(err)
