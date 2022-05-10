@@ -11,7 +11,7 @@ cd devtools-final
 ```
 3. ทำการ build image
 ```
-docker compose -f .\docker-compose-build.yml build
+docker compose -f docker-compose-build.yml build
 ```
 4. ทำการ deploy
 ```
