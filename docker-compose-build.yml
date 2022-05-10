@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  frontend:
+    build: ./frontend
+    image: konlawatit/devtool-frontend:1.0.0
+  backend:
+    build: ./backend
+    image: konlawatit/devtool-backend:1.0.0
