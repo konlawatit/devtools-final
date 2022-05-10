@@ -17,3 +17,5 @@ docker compose -f .\docker-compose-build.yml build
 ```
 docker compose up -d
 ```
+
+ดูข้อมูลอื่นๆได้ใน [wiki](https://github.com/konlawatit/devtools-final/wiki)
